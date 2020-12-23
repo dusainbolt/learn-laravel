@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddForeinkeyCart extends Migration
+class CreateSubjectsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,11 @@ class AddForeinkeyCart extends Migration
      */
     public function up()
     {
-        Schema::table('products', function (Blueprint $table) {
-            $table->foreign('userId')->references('id')->on('users');
+        Schema::create('subjects', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->foreignId('userId')->constrained('users');
+            $table->timestamps();
         });
     }
 
@@ -25,10 +28,6 @@ class AddForeinkeyCart extends Migration
      */
     public function down()
     {
-        Schema::table('products', function (Blueprint $table) {
-            //
-            $table->dropForeign();
-            // mai xem bh muon roi
-        });
+        Schema::dropIfExists('subjects');
     }
 }
