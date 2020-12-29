@@ -32,6 +32,18 @@ class SubjectSeeder extends Seeder
                 'name' => 'Fullstack',
                 'userId' => 1,
                 'created_at' => now(),
+            ],
+            [
+                'id' => 4,
+                'name' => 'Python',
+                'userId' => 2,
+                'created_at' => now(),
+            ],
+            [
+                'id' => 5,
+                'name' => 'Golang',
+                'userId' => 2,
+                'created_at' => now(),
             ]
         ];
         Subject::insert($data);

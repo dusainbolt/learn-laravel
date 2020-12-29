@@ -16,11 +16,18 @@ class CreateUsersTable extends Migration
         // ten truong phai la tieng anh va viet theo kieu lac da
         Schema::create('users', function (Blueprint $table) {
             $table->bigIncrements('id')->unique();
-            $table->string('email', 128)->unique();
             $table->string('fullName', 50);
-            $table->string('phoneNumber')->unique()->nullable();
-            $table->string('facebook')->unique()->nullable();
             $table->integer('birthday')->nullable();
+            $table->string('email', 128)->unique();
+            $table->string('phoneNumber')->unique()->nullable();
+            $table->string('job')->nullable();
+            $table->string('avatar')->nullable();
+            $table->string('facebook')->unique()->nullable();
+            $table->tinyInteger('gender')->nullable();
+            $table->string('country')->nullable();
+            // value = 1 => admin; value = 2 => user_course
+            $table->tinyInteger('role')->nullable();
+            $table->tinyInteger('status')->default(4);
             $table->timestamps();
         });
     }

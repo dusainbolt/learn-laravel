@@ -18,11 +18,11 @@ class ClassesSeeder extends Seeder
             [
 
                 'id' => 1,
-                'name' => 'Front End Class 11-2020',
+                'name' => 'Front End Class 7-2020',
                 'userId' => 1,
                 'subjectId' => 1,
                 'created_at' => now(),
-
+                'status' => 2, // ngung hoat dong
             ],
             [
 
@@ -31,7 +31,43 @@ class ClassesSeeder extends Seeder
                 'userId' => 1,
                 'subjectId' => 2,
                 'created_at' => now(),
+                'status' => 1,
+            ],
+            [
 
+                'id' => 3,
+                'name' => 'Full stack Class 11-2020',
+                'userId' => 2,
+                'subjectId' => 3,
+                'created_at' => now(),
+                'status' => 1,
+            ],
+            [
+
+                'id' => 4,
+                'name' => 'Python Class 11-2020',
+                'userId' => 2,
+                'subjectId' => 4,
+                'created_at' => now(),
+                'status' => 1,
+            ],
+            [
+
+                'id' => 5,
+                'name' => 'Golang Class 11-2020',
+                'userId' => 1,
+                'subjectId' => 5,
+                'created_at' => now(),
+                'status' => 1,
+            ],
+            [
+
+                'id' => 6,
+                'name' => 'Front End Class 02-2021',
+                'userId' => 2,
+                'subjectId' => 1,
+                'created_at' => now(),
+                'status' => 1,
             ],
         ];
         Classes::insert($data);

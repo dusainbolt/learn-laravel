@@ -24,11 +24,17 @@ class UserFactory extends Factory
     {
         return [
             'fullName' => $this->faker->name,
+            'birthday' => $this->faker->unixTime,
             'email' => $this->faker->unique()->safeEmail,
-            'phoneNumber' => $this->faker->unique()->phoneNumber,
+            'job' => $this->faker->jobTitle,
+            'avatar' => $this->faker->imageUrl(300,300),
             'facebook' => $this->faker->unique()->url,
-            'birthday' => 1605691730,
-            'role' => 'user_course',
+            'gender' => rand(1,2),
+            'country' => $this->faker->country,
+            'phoneNumber' => $this->faker->unique()->phoneNumber,
+            'role' => 2,
+            'status' => 1,
+            'created_at' => now(),
         ];
     }
 }
