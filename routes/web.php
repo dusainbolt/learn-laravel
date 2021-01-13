@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\ClassesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,7 +14,16 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/user', [UserController::class, 'getListUser']);
+Route::post('/add_user', [UserController::class, 'addUser']);
+
+
+Route::get('/class', [ClassesController::class, 'getListClass']);
+
+Route::get('/test', function () {
+    return view('layout');
 });

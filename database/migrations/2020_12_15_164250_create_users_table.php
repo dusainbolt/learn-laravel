@@ -27,7 +27,7 @@ class CreateUsersTable extends Migration
             $table->string('country')->nullable();
             // value = 1 => admin; value = 2 => user_course
             $table->tinyInteger('role')->nullable();
-            $table->tinyInteger('status')->default(4);
+            $table->tinyInteger('status')->default(STATUS_USER_PENDING);
             $table->timestamps();
         });
     }

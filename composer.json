@@ -33,8 +33,10 @@
         }
     },
     "autoload": {
-        "file": [
-            "app/common/contains.php"
+        "files": [
+            "app/common/contains.php",
+            "app/common/helper.php",
+            "app/common/config_model.php"
         ],
         "psr-4": {
             "App\\": "app/",

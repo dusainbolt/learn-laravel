@@ -27,13 +27,13 @@ class UserFactory extends Factory
             'birthday' => $this->faker->unixTime,
             'email' => $this->faker->unique()->safeEmail,
             'job' => $this->faker->jobTitle,
-            'avatar' => $this->faker->imageUrl(300,300),
+            'avatar' => AVATAR_USER_DATA[rand(0,4)],
             'facebook' => $this->faker->unique()->url,
             'gender' => rand(1,2),
             'country' => $this->faker->country,
             'phoneNumber' => $this->faker->unique()->phoneNumber,
-            'role' => 2,
-            'status' => 1,
+            'role' => ROLE_USER_COURSE,
+            'status' => STATUS_USER_ACTIVE,
             'created_at' => now(),
         ];
     }

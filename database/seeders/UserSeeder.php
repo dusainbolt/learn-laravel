@@ -27,8 +27,8 @@ class UserSeeder extends Seeder
               'gender' => 1,
               'country' => 'Ninh Bình',
               'phoneNumber' => '0328111597',
-              'role' => 1,
-              'status' => 1,
+              'role' => ROLE_USER_ADMIN,
+              'status' => STATUS_USER_ACTIVE,
               'created_at' => now(),
           ],
             [
@@ -42,8 +42,8 @@ class UserSeeder extends Seeder
                 'gender' => 1,
                 'country' => 'Ninh Bình',
                 'phoneNumber' => '0328111596',
-                'role' => 1,
-                'status' => 1,
+                'role' => ROLE_USER_ADMIN,
+                'status' => STATUS_USER_ACTIVE,
                 'created_at' => now(),
             ],
         ];
