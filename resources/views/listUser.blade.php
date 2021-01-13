@@ -13,7 +13,7 @@
         <th>Trang Thai</th>
         <th>Ngay tao</th>
         <th>Chinh sua</th>
-        @foreach($list_user as $user)
+        @foreach($listUser as $user)
             <tr>
                 <td>{{$user->id}}</td>
                 <td>{{$user->fullName}}</td>
@@ -39,8 +39,6 @@
                 <td style="width: 120px;"><a class="link">Chinh sua</a></td>
             </tr>
         @endforeach
-
     </table>
-
 @endsection
 

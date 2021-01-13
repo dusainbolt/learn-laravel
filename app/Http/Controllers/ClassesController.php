@@ -14,7 +14,17 @@ class ClassesController extends Controller
      * @step2: xu ly truyen du lieu danh user ra view
      */
     public function getListClass(){
-        $list_class = Classes::all();
+        $list_class = Classes::all()->sortByDesc('created_at');
         return view('listClass',  compact('list_class'));
+    }
+
+    public function addClass(Request $request){
+        $class = new Classes();
+        $class->name = $request->input('name');
+        $class->avatar = $request->input('avatar');
+        $class->userId = $request->input('userId');
+        $class->subjectId = $request->input('subjectId');
+        $class->save();
+        dd($class);
     }
 }

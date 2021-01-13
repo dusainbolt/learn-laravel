@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ClassesController;
-
+use App\Http\Controllers\SubjectController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,10 +19,14 @@ Route::get('/', function () {
 });
 
 Route::get('/user', [UserController::class, 'getListUser']);
-Route::post('/add_user', [UserController::class, 'addUser']);
+Route::post('/add_admin', [UserController::class, 'addUserAdmin']);
 
 
 Route::get('/class', [ClassesController::class, 'getListClass']);
+Route::post('/add_class', [ClassesController::class, 'addClass']);
+
+Route::get('/subject', [SubjectController::class, 'getListSubject']);
+Route::post('/add_subject', [SubjectController::class, 'addSubject']);
 
 Route::get('/test', function () {
     return view('layout');

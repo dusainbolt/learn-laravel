@@ -19,7 +19,7 @@ class CreateClassesTable extends Migration
             $table->string('avatar')->nullable();
             $table->foreignId('userId')->constrained('users');
             $table->foreignId('subjectId')->constrained('subjects');
-            $table->tinyInteger('status')->default(1);
+            $table->tinyInteger('status')->default(STATUS_CLASS_ACTIVE);
             $table->timestamps();
         });
     }

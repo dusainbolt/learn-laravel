@@ -13,12 +13,24 @@ class UserController extends Controller
      * @step2: xu ly truyen du lieu danh user ra view
      */
     public function getListUser(){
-        $list_user = User::all();
-        return view('listUser',  compact('list_user'));
+        $listUser = User::all()->sortByDesc('created_at');
+        return view('listUser',  compact('listUser'));
     }
 
-    public function addUser(){
-        $php = 3;
-
+    public function addUserAdmin(Request $request){
+        $admin = new User();
+        $admin->fullName = $request->input('fullName');
+        $admin->birthday = $request->input('birthday');
+        $admin->email = $request->input('email');
+        $admin->phoneNumber = $request->input('phoneNumber');
+        $admin->job = $request->input('job');
+        $admin->avatar = $request->input('avatar');
+        $admin->facebook = $request->input('facebook');
+        $admin->gender = $request->input('gender');
+        $admin->country = $request->input('country');
+        $admin->role = $request->input('role');
+        $admin->status = $request->input('status');
+        $admin->save();
+        dd($admin);
     }
 }

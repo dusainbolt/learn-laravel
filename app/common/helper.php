@@ -35,4 +35,15 @@ function getStatusTextClass($value){
     }
 }
 
+function getStatusTextSubject($value){
+    switch ($value){
+        case STATUS_SUBJECT_ACTIVE:
+            return "Hoat dong";
+        case STATUS_SUBJECT_INACTIVE:
+            return "Ngung hoat dong";
+        default:
+            return "";
+    }
+}
+
 ?>

@@ -9,4 +9,7 @@ define('ROLE_USER_COURSE', 2);
 define('STATUS_CLASS_ACTIVE', 1);
 define('STATUS_CLASS_INACTIVE', 2);
 
+define('STATUS_SUBJECT_ACTIVE', 1);
+define('STATUS_SUBJECT_INACTIVE', 2);
+
 ?>

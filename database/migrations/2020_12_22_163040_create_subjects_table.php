@@ -18,7 +18,7 @@ class CreateSubjectsTable extends Migration
             $table->string('name');
             $table->string('description')->nullable();
             $table->string('avatar')->nullable();
-            $table->string('status')->default(1);
+            $table->string('status')->default(STATUS_SUBJECT_ACTIVE);
             $table->foreignId('userId')->constrained('users');
             $table->timestamps();
         });

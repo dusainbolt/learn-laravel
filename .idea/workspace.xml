@@ -2,24 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf7e5f08-a14b-48f3-a36e-c25f5ad30308" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/common/config_model.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/common/helper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/about.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/listClass.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/listUser.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/test.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/listSubject.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ClassesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ClassesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SubjectController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SubjectController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Classes.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Classes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/common/contains.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/common/contains.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_15_164250_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_15_164250_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_29_151542_create_course_requests_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_29_151542_create_course_requests_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/ClassesSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/ClassesSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/UserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/UserSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/common/helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/common/helper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_22_163040_create_subjects_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_22_163040_create_subjects_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_22_163045_create_classes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_22_163045_create_classes_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/SubjectSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/SubjectSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/listUser.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/listUser.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -211,7 +210,7 @@
       <workItem from="1610107227481" duration="1580000" />
       <workItem from="1610108962175" duration="2314000" />
       <workItem from="1610115315777" duration="12487000" />
-      <workItem from="1610548486814" duration="3970000" />
+      <workItem from="1610548486814" duration="7548000" />
     </task>
     <servers />
   </component>

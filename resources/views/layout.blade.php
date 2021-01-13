@@ -45,6 +45,9 @@
         <a class="nav-link {{checkActiveMenu("/class")}}"  href="/class">Quan li lop hoc</a>
     </li>
     <li class="nav-item" role="presentation">
+        <a class="nav-link {{checkActiveMenu("/subject")}}"  href="/subject">Quan li mon hoc</a>
+    </li>
+    <li class="nav-item" role="presentation">
         <a class="nav-link {{checkActiveMenu("/point")}}"  href="/point">Quan li diem</a>
     </li>
 </ul>
