@@ -19,10 +19,15 @@ Route::get('/', function () {
 });
 
 Route::get('/user', [UserController::class, 'getListUser']);
-Route::post('/add_admin', [UserController::class, 'addUserAdmin']);
+Route::get('/courseRequest', [UserController::class, 'getCourseRequest']);
+
+Route::post('/admin', [UserController::class, 'addUserAdmin']);
+Route::put('/admin/{id}', [UserController::class, 'updateAdmin']);
+Route::delete('/admin/{id}', [UserController::class, 'deleteAdmin']);
 
 
 Route::get('/class', [ClassesController::class, 'getListClass']);
+Route::get('/manager-class-for-user/{userId}', [ClassesController::class, 'getClassManagerForUser']);
 Route::post('/add_class', [ClassesController::class, 'addClass']);
 
 Route::get('/subject', [SubjectController::class, 'getListSubject']);

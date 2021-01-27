@@ -29,7 +29,6 @@ class CourseRequestsSeeder extends Seeder
               'nowSkill' => $data_skill[rand(0,2)],
               'mission' => 'Hua se ngoan',
               'userId' => $i,
-              'classId' => rand(2,6),
               'status' => 3,
               'created_at' => now(),
           ];

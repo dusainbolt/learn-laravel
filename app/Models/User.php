@@ -46,6 +46,22 @@ class User extends Authenticatable
         'password',
         'remember_token',
     ];
+    public function courseRequest(){
+//        id cua bang user - UserId cua bang CourseRequest
+        return $this->hasOne(CourseRequests::class, 'userId');
+    }
+
+    public function subject(){
+        return $this->hasMany(Subject::class, 'userId');
+    }
+
+    public function classes(){
+        return $this->hasManyThrough(Classes::class, Subject::class,'userId', 'subjectId');
+    }
+
+//    public function classLesson(){
+//        return $this->hasManyThrough(Classes::class, 'userId');
+//    }
 
     /**
      * The attributes that should be cast to native types.

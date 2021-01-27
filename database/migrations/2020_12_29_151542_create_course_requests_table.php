@@ -24,7 +24,6 @@ class CreateCourseRequestsTable extends Migration
             $table->string('nowSkill')->nullable();
             $table->string('mission')->nullable();
             $table->foreignId('userId')->constrained('users');
-            $table->foreignId('classId')->constrained('classes');
             $table->tinyInteger('status')->default(3);
             $table->timestamps();
         });

@@ -18,8 +18,8 @@
                 <td>
                     <img style="width: 40px;" src="{{$class->avatar}}" alt="avatar_user"/>
                 </td>
-                <td>{{$class->userId}}</td>
-                <td>{{$class->subjectId}}</td>
+                <td>{{$class->user->fullName}}</td>
+                <td>{{$class->subject->name}}</td>
                 <td class="status-color-{{$class->status}}">{{getStatusTextClass($class->status)}}</td>
                 <td>{{$class->created_at}}</td>
                 <td style="width: 120px;"><a class="link">Chinh sua</a></td>

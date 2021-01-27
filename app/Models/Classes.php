@@ -15,4 +15,11 @@ use Illuminate\Database\Eloquent\Model;
 class Classes extends Model
 {
     use HasFactory;
+    public function user(){
+        return $this->hasOne(User::class, 'id', 'userId');
+    }
+
+    public function subject(){
+        return $this->hasOne(Subject::class, 'id', 'subjectId');
+    }
 }

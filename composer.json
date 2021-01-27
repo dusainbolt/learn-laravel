@@ -36,7 +36,8 @@
         "files": [
             "app/common/contains.php",
             "app/common/helper.php",
-            "app/common/config_model.php"
+            "app/common/config_model.php",
+            "app/common/contains_layout.php"
         ],
         "psr-4": {
             "App\\": "app/",
